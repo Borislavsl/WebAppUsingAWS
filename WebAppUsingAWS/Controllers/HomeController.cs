@@ -212,11 +212,11 @@ namespace WebAppUsingAWS.Controllers
             }
             catch (AmazonS3Exception e)
             {
-                ret.Add($"Error encountered ***. Message:'{e.Message}' when writing an object");
+                ret.Add($"Error encountered ***. Message:'{e.Message}' when reading an object");
             }
             catch (Exception e)
             {
-                ret.Add($"Unknown error encountered on server. Message:'{e.Message}' when writing an object");
+                ret.Add($"Unknown error encountered on server. Message:'{e.Message}' when reading an object");
             }
 
             return ret;
@@ -238,11 +238,11 @@ namespace WebAppUsingAWS.Controllers
             }
             catch (AmazonS3Exception e)
             {
-                ret = $"Error encountered on server. Message:'{e.Message}' when writing an object";
+                ret = $"Error encountered on server. Message:'{e.Message}' when deleting an object";
             }
             catch (Exception e)
             {
-                ret = $"Unknown error encountered on server. Message:'{e.Message}' when writing an object";
+                ret = $"Unknown error encountered on server. Message:'{e.Message}' when deleting an object";
             }
 
             return ret;
