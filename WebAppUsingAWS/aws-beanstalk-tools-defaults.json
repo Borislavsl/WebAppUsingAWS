@@ -1,0 +1,24 @@
+
+{
+    "region" : "eu-central-1",
+    "configuration" : "Release",
+    "framework"     : "netcoreapp3.1",
+    "self-contained" : false,
+    "application"    : "BorislavWebAppAWS",
+    "environment"    : "BorislavWebAppAWS-test",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-05d7fb4c\";\"aws:ec2:vpc,Subnets\"=\"subnet-fc7ba6a6\"",
+    "solution-stack"       : "64bit Windows Server 2019 v2.6.3 running IIS 10.0",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "borislavwebappaws-test",
+    "instance-type"        : "t3a.medium",
+    "key-pair"             : "Frankfurt",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "aws-elasticbeanstalk-service-role",
+    "proxy-server"         : "nginx",
+    "profile"              : "default",
+    "health-check-url"     : "/",
+    "iis-website"          : "Default Web Site",
+    "app-path"             : "/"
+}
