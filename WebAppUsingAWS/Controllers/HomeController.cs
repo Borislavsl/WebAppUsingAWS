@@ -1,10 +1,10 @@
 ﻿using System;
 using System.IO;
-using System.Text;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Logging;
 using Amazon;
 using Amazon.S3;
@@ -15,7 +15,6 @@ using Amazon.SQS.Model;
 using Amazon.SimpleNotificationService;
 using Amazon.SimpleNotificationService.Model;
 using WebAppUsingAWS.Models;
-using Microsoft.AspNetCore.Hosting;
 
 namespace WebAppUsingAWS.Controllers
 {
