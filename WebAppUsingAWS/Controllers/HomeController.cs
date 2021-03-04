@@ -344,7 +344,7 @@ namespace WebAppUsingAWS.Controllers
 
             var subscribeRequest = new SubscribeRequest
             {
-                Endpoint = "borislav.k.slav@gmail.com",
+                Endpoint = "borislavslavov96@gmail.com",
                 Protocol = "email",
                 TopicArn = topicResponse.TopicArn
             };
